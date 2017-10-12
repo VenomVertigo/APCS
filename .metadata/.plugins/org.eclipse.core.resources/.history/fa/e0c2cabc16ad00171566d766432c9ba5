@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class FractionTester {
+
+	public static void main(String[] args) {
+		ArrayList<Fraction> fractions = new ArrayList<Fraction>();
+		Fraction num1 = new Fraction(1, 3);
+		Fraction num2 = new Fraction(1, 4);
+		fractions.add(num2);
+		fractions.add(num1);
+		
+		System.out.println(num1.toString() + "\n" + num2.toString());
+		Fraction result = Fraction.mult(num1, num2);
+		num1.mult(num2);
+		System.out.println(result.toString() + "\n" + num1.toString());
+		Collections.sort(fractions);
+		System.out.println(fractions);
+	}
+
+}

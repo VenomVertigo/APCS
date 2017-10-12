@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class APStack implements Stack{
+private ArrayList<Integer> list;
+
+public APStack() {
+	list = new ArrayList<Integer>();
+}
+
+	@Override
+	public void push(int item) {
+		list.add(item);
+	}
+
+	@Override
+	public int pop() {
+		int temp = list.get(list.size() - 1);
+		list.remove(list.size() - 1);
+		return temp;
+	}
+
+	@Override
+	public int size() {
+		return list.size();
+	}
+
+}

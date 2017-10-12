@@ -1,0 +1,39 @@
+import java.util.Arrays;
+
+public class GenericStack<E> {
+	private int[] list;
+
+	public GenericStack() {
+		list = new int[0];
+	}
+
+	public void push(int item) {
+		int[] temp = new int[list.length + 1];
+		for (int i = 0; i < list.length; i++) {
+			temp[i] = list[i];
+		}
+		temp[temp.length - 1] = item;
+		list = temp;
+	}
+
+	public int pop() {
+		int[] temp = new int[list.length - 1];
+		int tempo;
+		for (int i = 0; i < temp.length; i++) {
+			temp[i] = list[i];
+		}
+		tempo = list[temp.length];
+		list = temp;
+		return tempo;
+	}
+
+	public int size() {
+		return list.length;
+	}
+	
+	@Override
+	public String toString() {
+		return Arrays.toString(list);
+	}
+
+}

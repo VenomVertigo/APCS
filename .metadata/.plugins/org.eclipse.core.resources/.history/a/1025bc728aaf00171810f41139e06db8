@@ -1,0 +1,25 @@
+
+public class InterfaceTester {
+
+	public static void main(String[] args) {
+		APStack stack = new APStack();
+		APQueue queue = new APQueue();
+		for (int i = 0; i < 20; i++) {
+			stack.push(i);
+			queue.push(i);
+		}
+
+		System.out.println("Stack:" + stack.toString());
+		System.out.println("Queue:" + stack.toString());
+		stack.push(20);
+		queue.push(20);
+		System.out.println("Stack:" + stack.toString());
+		System.out.println("Queue:" + stack.toString());
+		stack.pop();
+		queue.pop();
+		System.out.println("Stack:" + stack.toString());
+		System.out.println("Queue:" + stack.toString());
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Main.sentenceWithMostLetters(...)&apos; to &apos;sentenceWithMostCharacters&apos;&#x0A;- Original project: &apos;StringPractice&apos;&#x0A;- Original element: &apos;Main.sentenceWithMostLetters(...)&apos;&#x0A;- Renamed element: &apos;Main.sentenceWithMostCharacters(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;sentenceWithMostLetters&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{Main.java[Main~sentenceWithMostLetters~\[QString;" name="sentenceWithMostCharacters" references="true" stamp="1505420277672" version="1.0"/>
+</session>
